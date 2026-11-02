@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+:root {
+  --background: #F8FAF8;
+  --foreground: #111827;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: 'Plus Jakarta Sans', var(--font-geist-sans), system-ui, -apple-system, sans-serif;
+  --font-mono: var(--font-geist-mono), monospace;
+}
+
+body {
+  background: #F8FAF8;
+  color: #111827;
+  font-family: 'Plus Jakarta Sans', var(--font-geist-sans), system-ui, -apple-system, sans-serif;
+}
+
+/* Custom scrollbar for clean rural civic feel */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F4F7F4;
+}
+::-webkit-scrollbar-thumb {
+  background: #C1D3C7;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #95B4A0;
+}
+
+/* RTL Language Enhancements */
+html[dir="rtl"] {
+  direction: rtl;
+}
+
+html[dir="rtl"] body {
+  direction: rtl;
+}
+
+html[dir="ltr"] {
+  direction: ltr;
+}
